@@ -11,12 +11,14 @@ const Navbar = () => {
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
-    <nav className="bg-[#FFFCF7]  fixed top-0 left-0 w-full z-50">
+    <nav className="bg-[#FFFCF7] fixed top-0 left-0 w-full z-50 shadow-sm">
       <div className="w-10/12 mx-auto flex justify-between items-center py-4">
         <div className="flex items-center gap-3">
           <img src={logoImg} alt="StartupLand Logo" className="w-10 h-10 object-contain" />
           <h3 className="text-xl font-bold text-gray-800">StartupLand</h3>
         </div>
+
+       
         <ul className="hidden md:flex items-center gap-8 text-gray-700 font-medium">
           <li>
             <NavLink
@@ -48,14 +50,23 @@ const Navbar = () => {
           </li>
           <LuSearch className="cursor-pointer hover:text-[#E5A740]" size={20} />
         </ul>
+
+        {/* Right Side Buttons */}
         <div className="flex items-center gap-4">
-          <button className="hidden md:flex items-center gap-2 text-gray-700 hover:text-[#E5A740] font-medium">
+          <NavLink
+            to="/login"
+            className="hidden md:flex items-center gap-2 text-gray-700 font-medium 
+                       hover:text-[#E5A740] transition-all duration-300 hover:scale-105"
+          >
             <CiUnlock size={22} />
             Login
-          </button>
+          </NavLink>
+
           <button className="hidden md:block bg-[#E5A740] text-white px-5 py-2 rounded-lg font-semibold hover:bg-[#cf922f] transition">
             Get Started
           </button>
+
+          {/* Mobile Menu Toggle */}
           <button
             onClick={toggleMenu}
             className="md:hidden text-gray-700 hover:text-[#E5A740] focus:outline-none"
@@ -64,6 +75,8 @@ const Navbar = () => {
           </button>
         </div>
       </div>
+
+      {/* Mobile Dropdown Menu */}
       {menuOpen && (
         <div className="md:hidden bg-gray-100 shadow-md border-t">
           <div className="w-10/12 mx-auto flex flex-col items-center gap-5 py-6 text-gray-700 font-medium">
@@ -78,12 +91,16 @@ const Navbar = () => {
             </NavLink>
 
             <div className="flex items-center gap-1 cursor-pointer hover:text-[#E5A740]">
-              <NavLink to="/advertise" onClick={toggleMenu}>Advertise</NavLink>
+              <NavLink to="/advertise" onClick={toggleMenu}>
+                Advertise
+              </NavLink>
               <FaCaretDown size={14} />
             </div>
 
             <div className="flex items-center gap-1 cursor-pointer hover:text-[#E5A740]">
-              <NavLink to="/support" onClick={toggleMenu}>Supports</NavLink>
+              <NavLink to="/support" onClick={toggleMenu}>
+                Supports
+              </NavLink>
               <FaCaretDown size={14} />
             </div>
 
@@ -99,10 +116,16 @@ const Navbar = () => {
 
             <LuSearch className="cursor-pointer hover:text-[#E5A740]" size={20} />
 
-            <button className="flex items-center gap-2 text-gray-700 hover:text-[#E5A740] font-medium">
+            {/* ✅ Login now navigates properly */}
+            <NavLink
+              to="/login"
+              onClick={toggleMenu}
+              className="flex items-center gap-2 text-gray-700 hover:text-[#E5A740] font-medium"
+            >
               <CiUnlock size={22} />
               Login
-            </button>
+            </NavLink>
+
             <button className="bg-[#E5A740] text-white px-5 py-2 rounded-lg font-semibold hover:bg-[#cf922f] transition">
               Get Started
             </button>
