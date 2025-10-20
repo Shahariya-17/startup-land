@@ -11,7 +11,7 @@ const Navbar = () => {
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
-    <nav className="bg-white  fixed top-0 left-0 w-full z-50">
+    <nav className="bg-gray-100  fixed top-0 left-0 w-full z-50">
       <div className="w-10/12 mx-auto flex justify-between items-center py-4">
         <div className="flex items-center gap-3">
           <img src={logoImg} alt="StartupLand Logo" className="w-10 h-10 object-contain" />
@@ -65,7 +65,7 @@ const Navbar = () => {
         </div>
       </div>
       {menuOpen && (
-        <div className="md:hidden bg-white shadow-md border-t">
+        <div className="md:hidden bg-gray-100 shadow-md border-t">
           <div className="w-10/12 mx-auto flex flex-col items-center gap-5 py-6 text-gray-700 font-medium">
             <NavLink
               to="/"
