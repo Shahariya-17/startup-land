@@ -6,7 +6,7 @@ import sponsoredImg3 from "../../../../assets/logo/Dropbox_logo_2017.png";
 
 const Banner = () => {
   return (
-    <section className="bg-[#FFFCF7] py-20">
+    <section className="bg-[#FFFCF7] py-30">
       <div className="w-10/12 mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
         
         <div className="flex-1 text-center lg:text-left space-y-6 animate-fadeIn">
@@ -31,7 +31,7 @@ const Banner = () => {
           </div>
 
           
-          <div className="flex flex-col sm:flex-row items-center gap-6 mt-8 text-gray-600 text-sm">
+          <div className="flex flex-col sm:flex-row items-center gap-6 mt-10 text-gray-600 text-sm">
             <p className="font-medium">Sponsored by:</p>
             <div className="flex items-center gap-5 opacity-80">
               <img src={sponsoredImg1} alt="PayPal" className="h-6 object-contain hover:opacity-100 transition duration-200" />

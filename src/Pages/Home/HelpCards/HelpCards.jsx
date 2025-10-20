@@ -32,7 +32,7 @@ const HelpCards = () => {
         </div>
 
         {/* Card 2 */}
-        <div className="flex gap-5 bg-gray-200 border border-gray-100 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300">
+        <div className="flex gap-5 bg-gray-100 border border-gray-100 rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all duration-300">
           <img
             src={avatarImg}
             alt="Help Support"
