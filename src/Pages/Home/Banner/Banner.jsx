@@ -6,20 +6,20 @@ import sponsoredImg3 from "../../../../assets/logo/Dropbox_logo_2017.png";
 
 const Banner = () => {
   return (
-    <section className="bg-gray-50 py-20">
+    <section className="bg-[#FFFCF7] py-20">
       <div className="w-10/12 mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
         
         <div className="flex-1 text-center lg:text-left space-y-6 animate-fadeIn">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 leading-snug">
             Ultimate support <br /> system for leading <br /> agencies
           </h1>
-          <p className="text-gray-600 text-base md:text-lg leading-relaxed">
+          <p className="text-gray-800 text-base md:text-lg leading-relaxed">
             Get your tests delivered and let home collect sample from <br /> the victory  
             of the managements that supplies the best <br /> design system guidelines ever.
           </p>
 
         
-          <div className="flex flex-col sm:flex-row items-center gap-3 opacity-90 mt-4">
+          <div className="flex flex-col sm:flex-row items-center gap-3 text-gray-400 opacity-90 mt-4">
             <input
               type="text"
               placeholder="Enter your email address"

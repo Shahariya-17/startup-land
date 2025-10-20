@@ -11,7 +11,7 @@ const Navbar = () => {
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
-    <nav className="bg-gray-100  fixed top-0 left-0 w-full z-50">
+    <nav className="bg-[#FFFCF7]  fixed top-0 left-0 w-full z-50">
       <div className="w-10/12 mx-auto flex justify-between items-center py-4">
         <div className="flex items-center gap-3">
           <img src={logoImg} alt="StartupLand Logo" className="w-10 h-10 object-contain" />
