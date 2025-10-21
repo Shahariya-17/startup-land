@@ -3,6 +3,7 @@ import Banner from '../Banner/Banner';
 import HelpCards from '../HelpCards/HelpCards';
 import FeatureSection from '../FeatureSection/FeatureSection';
 import ReplySection from '../ReplySection/ReplySection';
+import OverViewSection from '../OverViewSection/OverViewSection';
 
 const Home = () => {
     return (
@@ -11,6 +12,7 @@ const Home = () => {
             <HelpCards></HelpCards>
             <FeatureSection></FeatureSection>
             <ReplySection></ReplySection>
+            <OverViewSection></OverViewSection>
         </div>
     );
 };
