@@ -4,7 +4,8 @@ import logo from '../../../../assets/logo/logo.png';
 const Footer = () => {
   return (
     <footer className="bg-[#1B1D3C] text-white">
-      <div className="py-20 mt-5 text-center px-5 border-b border-gray-700">
+      {/* Subscribe Section */}
+      <div className="py-20 text-center px-5 border-b border-gray-700">
         <h2 className="text-2xl md:text-3xl font-semibold mb-3">
           Subscribe to get notified about update
         </h2>
@@ -30,9 +31,9 @@ const Footer = () => {
         </form>
       </div>
 
-      
+      {/* Bottom Footer */}
       <div className="py-8 flex flex-col md:flex-row items-center justify-between gap-5 w-11/12 lg:w-10/12 mx-auto text-sm text-gray-400">
-       
+        {/* Logo + copyright */}
         <div className="flex items-center gap-3">
           <img src={logo} alt="Logo" className="w-6 h-6 object-contain" />
           <p className="text-gray-300 font-medium">
