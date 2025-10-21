@@ -4,6 +4,7 @@ import HelpCards from '../HelpCards/HelpCards';
 import FeatureSection from '../FeatureSection/FeatureSection';
 import ReplySection from '../ReplySection/ReplySection';
 import OverViewSection from '../OverViewSection/OverViewSection';
+import PricingSection from '../About/PricingSection/PricingSection';
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
             <FeatureSection></FeatureSection>
             <ReplySection></ReplySection>
             <OverViewSection></OverViewSection>
+            <PricingSection></PricingSection>
         </div>
     );
 };
